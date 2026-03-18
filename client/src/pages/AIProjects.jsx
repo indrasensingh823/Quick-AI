@@ -76,7 +76,7 @@ const AIProjects = () => {
           <div className="flex flex-col">
             <div className="bg-gray-100 rounded-lg p-4 mb-6 border border-gray-200">
               <img
-                src="\src\assets\pm-dashboard.png"
+                src="https://res.cloudinary.com/dcx41bmth/image/upload/v1773862114/image_2026-03-18_19-38-42_nwpvsc.png"
                 alt="Project dashboard preview"
                 className="rounded-md shadow-sm w-full h-auto"
               />
