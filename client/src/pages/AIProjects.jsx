@@ -10,7 +10,7 @@ import {
 
 const AIProjects = () => {
   const handleRedirect = () => {
-    window.location.href = "https://project-management-gs.vercel.app/";
+    window.location.href = "https://project-mgt-ruby.vercel.app/";
   };
 
   return (
