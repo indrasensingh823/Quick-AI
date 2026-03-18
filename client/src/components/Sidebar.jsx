@@ -22,6 +22,7 @@ const navItems = [
   { to: "/ai/remove-object", label: "Remove Object", Icon: Scissors },
   { to: "/ai/review-resume", label: "Review Resume", Icon: FileText },
   { to: "/ai/community", label: "Community", Icon: Users },
+  { to: "/ai/projects", label: "AI Workspace", Icon: FolderKanban },
 ];
 
 const Sidebar = ({ sidebar, setSidebar }) => {
@@ -66,29 +67,6 @@ const Sidebar = ({ sidebar, setSidebar }) => {
             </NavLink>
           ))}
 
-          {/* ✅ NEW PROJECT MANAGEMENT BUTTON */}
-          {/* 🚀 UNIQUE PROJECT MANAGEMENT BUTTON */}
-          <a
-            href="https://project-management-gs.vercel.app/"
-            onClick={() => setSidebar(false)}
-            className="relative px-4 py-3 mt-4 flex items-center gap-3 rounded-xl 
-                       bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500
-                       text-white font-semibold shadow-lg
-                       hover:shadow-purple-400/50
-                       transition-all duration-300
-                       hover:scale-105 active:scale-95
-                       overflow-hidden group"
-          >
-            {/* Animated Glow Effect */}
-            <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition duration-300 rounded-xl"></span>
-
-            {/* Icon with subtle animation */}
-            <FolderKanban className="w-5 h-5 group-hover:rotate-6 transition duration-300" />
-
-            <span className="relative z-10 tracking-wide">
-              Project Manager
-            </span>
-          </a>
         </div>
       </div>
 
