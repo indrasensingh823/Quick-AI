@@ -15,6 +15,7 @@ import Community from './pages/Community'
 import AIProjects from "./pages/AIProjects";
 import { useAuth } from '@clerk/clerk-react'
 import { Toaster } from "react-hot-toast";
+import Pricing from "./pages/Pricing";
 
 const App = () => {
 
@@ -38,6 +39,7 @@ const App = () => {
            <Route path="review-resume" element={<ReviewResume />} />
            <Route path="community" element={<Community />} />
            <Route path="/ai/projects" element={<AIProjects />} />
+           <Route path="/ai/pricing" element={<Pricing />} />
           </Route>
          
       </Routes>

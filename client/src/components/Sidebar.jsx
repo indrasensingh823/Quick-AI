@@ -9,7 +9,8 @@ import {
   FileText,
   Users,
   LogOut,
-  FolderKanban, 
+  FolderKanban,
+  CreditCard,   // ✅ NEW ICON
 } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
@@ -66,11 +67,12 @@ const Sidebar = ({ sidebar, setSidebar }) => {
               )}
             </NavLink>
           ))}
-
         </div>
       </div>
 
-      <div className="w-full border-t border-gray-200 p-4 px-7 flex items-center justify-between">
+      <div className="w-full border-t border-gray-200 p-4 px-7 flex flex-col gap-3">
+        
+        {/* Profile Section */}
         <div
           onClick={openUserProfile}
           className="flex gap-2 items-center cursor-pointer"
@@ -90,10 +92,25 @@ const Sidebar = ({ sidebar, setSidebar }) => {
             </p>
           </div>
         </div>
-        <LogOut
-          onClick={signOut}
-          className="w-4.5 text-gray-400 hover:text-gray-700 transition cursor-pointer"
-        />
+
+        {/* Logout + Pricing Row */}
+        <div className="flex items-center justify-between">
+          <LogOut
+            onClick={signOut}
+            className="w-4.5 text-gray-400 hover:text-gray-700 transition cursor-pointer"
+          />
+           
+          {/* ✅ NEW PRICING BUTTON */}
+          <NavLink
+            to="/ai/pricing"
+            onClick={() => setSidebar(false)}
+            className="flex items-center gap-1 text-xs text-gray-500 hover:text-purple-600 transition"
+          >
+            <CreditCard className="w-4 h-4" />
+            Pricing
+          </NavLink>
+        </div>
+
       </div>
     </div>
   );

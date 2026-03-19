@@ -21,7 +21,7 @@ const AIProjects = () => {
         <div className="bg-gradient-to-r from-[#C341F6] to-[#8E37EB] px-8 py-6">
           <div className="flex items-center gap-3 text-white">
             <Sparkles className="w-8 h-8" />
-            <h1 className="text-2xl font-bold">AI Project Hub</h1>
+            <h1 className="text-2xl font-bold">Cognify Workspace</h1>
           </div>
           <p className="text-white/90 mt-2 max-w-2xl">
             Seamlessly manage projects, track tasks, and boost team productivity with AI‑powered insights.
@@ -34,7 +34,7 @@ const AIProjects = () => {
           <div>
             <h2 className="text-lg font-semibold text-slate-700 mb-4 flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5 text-[#8E37EB]" />
-              Why choose AI Project Hub?
+              Why choose Cognify Workspace?
             </h2>
             <div className="space-y-4">
               <FeatureItem
@@ -91,7 +91,7 @@ const AIProjects = () => {
                 className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-[#C341F6] to-[#8E37EB] text-white px-6 py-3 rounded-lg font-medium shadow-md hover:shadow-lg transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
               >
                 <ExternalLink className="w-5 h-5" />
-                Open AI Project Hub
+                Open AI Cognify Workspace
               </button>
             </div>
           </div>
