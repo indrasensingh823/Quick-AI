@@ -18,7 +18,7 @@ const Layout = () => {
         <img
           onClick={() => navigate("/ai")}
           // src={assets.logo}
-          src="src/assets/cognifylogo.png"
+          src="https://cognify-ai-powered-productivity-sui.vercel.app/cognifylogo.png"
           alt="logo"
           // className="cursor-pointer w-32 sm:w-44"
           className="cursor-pointer h-10 sm:h-12 w-auto object-contain"
